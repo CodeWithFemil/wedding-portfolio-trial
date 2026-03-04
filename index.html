@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Emily & James Photography</title>
+
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600&family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    color: #333;
+    line-height: 1.6;
+}
+
+h1, h2, h3 {
+    font-family: 'Playfair Display', serif;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/* Navbar */
+nav {
+    position: fixed;
+    width: 100%;
+    padding: 20px 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: rgba(0,0,0,0.5);
+    color: white;
+    z-index: 1000;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 30px;
+}
+
+nav ul li a {
+    color: white;
+    font-weight: 400;
+}
+
+/* Hero Section */
+.hero {
+    height: 100vh;
+    background: url('https://images.unsplash.com/photo-1520854221256-17451cc331bf') center/cover no-repeat;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+}
+
+.hero-content h1 {
+    font-size: 60px;
+}
+
+.hero-content p {
+    margin: 20px 0;
+    font-size: 18px;
+}
+
+.btn {
+    display: inline-block;
+    padding: 12px 30px;
+    background: #c6a567;
+    color: white;
+    border-radius: 30px;
+    margin-top: 10px;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background: #a8884d;
+}
+
+/* Section Styling */
+section {
+    padding: 80px 60px;
+    text-align: center;
+}
+
+.section-title {
+    font-size: 36px;
+    margin-bottom: 40px;
+}
+
+/* Featured Weddings */
+.cards {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.card {
+    width: 300px;
+}
+
+.card img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.card h3 {
+    margin-top: 15px;
+}
+
+/* About Section */
+.about {
+    display: flex;
+    gap: 40px;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.about img {
+    width: 300px;
+    border-radius: 10px;
+}
+
+.about-text {
+    max-width: 500px;
+    text-align: left;
+}
+
+/* Gallery */
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.gallery img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+/* Testimonial */
+.testimonial {
+    background: #f9f5ef;
+    padding: 60px;
+    font-style: italic;
+}
+
+/* Contact */
+.contact form {
+    max-width: 500px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+input, textarea {
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #222;
+    color: white;
+    margin-top: 40px;
+}
+
+/* Responsive */
+@media(max-width: 768px){
+    .hero-content h1 {
+        font-size: 40px;
+    }
+}
+</style>
+</head>
+
+<body>
+
+<nav>
+    <h2>Emily & James</h2>
+    <ul>
+        <li><a href="#">Home</a></li>
+        <li><a href="#portfolio">Portfolio</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+    </ul>
+</nav>
+
+<section class="hero">
+    <div class="hero-content">
+        <h1>Capturing Your Perfect Moments</h1>
+        <p>Beautiful & Timeless Wedding Photography</p>
+        <a href="#portfolio" class="btn">View Portfolio</a>
+    </div>
+</section>
+
+<section id="portfolio">
+    <h2 class="section-title">Featured Weddings</h2>
+    <div class="cards">
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1519741497674-611481863552" alt="">
+            <h3>Romantic Beach Wedding</h3>
+        </div>
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1523438885200-e635ba2c371e" alt="">
+            <h3>Vintage Garden Wedding</h3>
+        </div>
+        <div class="card">
+            <img src="https://images.unsplash.com/photo-1537633552985-df8429e8048b" alt="">
+            <h3>Elegant Ballroom Wedding</h3>
+        </div>
+    </div>
+</section>
+
+<section id="about">
+    <h2 class="section-title">About Me</h2>
+    <div class="about">
+        <img src="https://images.unsplash.com/photo-1529626455594-4ff0802cfb7e" alt="">
+        <div class="about-text">
+            <h3>Passionate Wedding Photographer</h3>
+            <p>I capture love stories with creativity and emotion. With over 10 years of experience, my goal is to make your special day unforgettable through timeless photography.</p>
+        </div>
+    </div>
+</section>
+
+<section class="testimonial">
+    <h2>Client Love</h2>
+    <p>"Emily captured every magical moment of our wedding day. The photos are absolutely stunning!"</p>
+</section>
+
+<section>
+    <h2 class="section-title">Gallery</h2>
+    <div class="gallery">
+        <img src="https://images.unsplash.com/photo-1504215680853-026ed2a45def">
+        <img src="https://images.unsplash.com/photo-1503777119540-42b02e05b7b2">
+        <img src="https://images.unsplash.com/photo-1500530855697-b586d89ba3ee">
+        <img src="https://images.unsplash.com/photo-1520854221256-17451cc331bf">
+    </div>
+</section>
+
+<section id="contact" class="contact">
+    <h2 class="section-title">Contact Me</h2>
+    <form>
+        <input type="text" placeholder="Your Name" required>
+        <input type="email" placeholder="Your Email" required>
+        <textarea rows="5" placeholder="Your Message"></textarea>
+        <button class="btn">Send Message</button>
+    </form>
+</section>
+
+<footer>
+    © 2026 Emily & James Photography | All Rights Reserved
+</footer>
+
+</body>
+</html>
